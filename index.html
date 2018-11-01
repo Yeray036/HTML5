@@ -10,8 +10,28 @@
             animation-fill-mode: forwards;
         }
         @keyframes mymove {
-            from {top: -60px; opacity: 0;}
-            to {top: 0px; opacity: 1;}
+            from {top: -500px; opacity: 0;}
+            to {top: -260px; opacity: 1;}
+        }
+        div#profilePicture {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: movepf 3.2s 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes movepf {
+            from {top: -100px; opacity: 0;}
+            to {top: 150px; opacity: 1}
+        }
+        div#Name {
+            position: fixed;
+            animation: moveName 4s 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes moveName {
+            from {opacity: 0;}
+            to {opacity: 1}
         }
     </style>
     <meta charset="UTF-8">
@@ -32,12 +52,14 @@
                 <li><a href="#">Info</a></li>
             </ul>
         </nav>
+        <div id="profilePicture">
+            <img src="img/profilePicture.jpg" width="250px"; height="250px">
+        </div>
     </header>
-    <div class="main">
-    <div id="profilePicture">
-        <img src="img/profilePicture.jpg" width="250px" height="250px">
+    <div id="Name">
+        <h1>Yeray Guzmán Padrón</h1>
     </div>
-    </div>
+    <div class="main"></div>
 </div>
 </body>
 </html>

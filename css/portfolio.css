@@ -14,6 +14,18 @@ body {
     color: lightblue;
 }
 
+#Name {
+    position: fixed;
+    background-color: rgba(99,99,99,0.54);
+    top: 470px;
+    left: 190px;
+    color: lightblue;
+    margin: auto;
+    border-radius: 20px;
+    width: 80.1%;
+    text-align: center;
+}
+
 .main {
     background: url("../img/backgroundPortfolio.jpg");
     background-size: auto;
@@ -22,6 +34,11 @@ body {
     margin: auto;
     overflow: hidden;
     z-index: -1;
+}
+
+#profilePicture {
+    z-index: 3;
+    left: 655px;
 }
 
 .container{
@@ -71,12 +88,5 @@ nav {
     align-content: center;
     justify-content: space-between;
     background: rgba(0,0,0,0.4);
-    z-index: 1;
-}
-
-#profilePicture {
-    position: fixed;
-    left: 850px;
-    top: 300px;
     z-index: 1;
 }
