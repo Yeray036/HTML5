@@ -16,12 +16,12 @@ body {
 
 #Name {
     position: fixed;
-    background-color: rgba(99,99,99,0.54);
+    background-color: rgb(0, 0, 0);
     top: 470px;
     left: 190px;
     color: lightblue;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 80.1%;
     text-align: center;
 }
