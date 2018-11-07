@@ -1,9 +1,53 @@
 .col h1 {
-    color: dodgerblue;
+    color: lightblue;
     text-align: center;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     text-shadow: 2px 1px 1px black;
 }
 .col h1:hover {
     font-size: 60px;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 45px;
+}
+
+h1#htmlhover {
+    transition: font-size 1s;
+}
+
+h1#htmlhover {
+    max-width: 230px;
+}
+
+img#logo {
+    height: 60px;
+    width: 100px;
+    transition: height 1s, width 1s;
+}
+
+img#logo:hover {
+    height: 90px;
+    width: 150px;
+}
+a#javalink {
+    font-size: 100px;
+    transition: font-size 1.2s;
+}
+a#javalink:hover {
+    font-size: 35px;
+}
+a#html5link {
+    font-size: 100px;
+    transition: font-size 1.2s;
+}
+a#html5link:hover {
+    font-size: 35px;
+}
+a#infolink {
+    font-size: 100px;
+    transition: font-size 1.2s;
+}
+a#infolink:hover {
+    font-size: 35px;
 }
