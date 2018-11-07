@@ -1,0 +1,9 @@
+.col h1 {
+    color: dodgerblue;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 1px 1px black;
+}
+.col h1:hover {
+    font-size: 60px;
+}

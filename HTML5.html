@@ -15,7 +15,7 @@
                 opacity: 1;
             }
         }
-        div#slides {
+        div.col {
             animation: moveSlide 2s 1;
             animation-fill-mode: forwards;
         }
@@ -30,19 +30,20 @@
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeray Portfolio</title>
+    <title>Yeray HTML_5</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/html_5_page.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-       <a class="navbar-brand" href="index.html"><img src="img/YGP.png" width="100px" height="60px"></a>
+        <a class="navbar-brand" href="index.html" onmouseover="ygpLogo.width=150; ygpLogo.height=80;" onmouseout="ygpLogo.width=100; ygpLogo.height=60;"><img src="img/YGP.png" width="100px" height="60px" name="ygpLogo"></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -60,36 +61,13 @@
 
     </div>
 </nav>
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/javabackground.png">
-                    <div class="carousel-caption">
-                       <h1 class="display-2">Java</h1>
-                        <h3>Courses completed</h3>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/html5background.png">
-                    <div class="carousel-caption">
-                        <h1 class="display-2">HTML 5</h1>
-                        <h3>Like this website</h3>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/backgroundPortfolio3.jpg">
-                    <div class="carousel-caption">
-                        <h1 class="display-2">Info</h1>
-                        <h3>About me</h3>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>HTML5</h1>
         </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
