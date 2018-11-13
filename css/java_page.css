@@ -51,6 +51,17 @@ a#infolink {
 a#infolink:hover {
     font-size: 35px;
 }
-h3#javaName {
-    text-align: center;
+.firstRow {
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.secondRow {
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
