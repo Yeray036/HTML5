@@ -30,24 +30,16 @@
                 opacity: 1;
             }
         }
-        .fixed-bg {
-            background-image: url("img/backgroundPortfolio3.jpg");
-            min-height: 200px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeray java</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/java_page.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/prism.css">
     <link rel="stylesheet" href="css/modalFullscreen.css">
     <link rel="stylesheet" href="css/line-numbers.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/java_page.css" rel="stylesheet">
 </head>
 <body>
 
@@ -84,32 +76,47 @@
         </div>
     </div>
 </div>
-<div class="fixed-bg"></div>
-<div class="container">
+<div class="container" id="backgroundfirstrow">
     <div class="row">
         <div class="col firstRow">
             <h3 id="javaNamePrint">Java name print</h3>
             <img src="gifs/H2%20GUI.gif" width="325px" height="300px" id="javaNamePrintimg" data-toggle="modal"
                  data-target="#myModal">
             <p id="javaNPText">
-                Zoals de naam het al zegt.
-                Deze java classe zorgt ervoor
-                dat je een bepaalde tekst kan uitprinten,
-                dit zou je kunnen aanpassen in:
-                <code class="language-java">g.drawstring("invoer", x, y);</code>
+            Zoals de naam het al zegt.
+            Deze java classe zorgt ervoor
+            dat je een bepaalde tekst kan uitprinten,
+            dit zou je kunnen aanpassen in:<br>
+            <code class="language-java">g.drawstring("invoer", x, y);</code>
             </p>
         </div>
         <div class="col firstRow">
             <h3 id="javaGrafiek">Java grafiek</h3>
             <img src="gifs/h5Grafiek.gif" width="325px" height="300px" id="javaGrafiekimg" data-toggle="modal"
                  data-target="#myModal2">
+            <p id="javaGText">
+                In deze java code kan je
+                bepaalde values toevoegen/aanpassen.<br>
+                De waardes kan je aanpassen in:<br>
+                <code class="language-java">public init() {
+                        Valerie = value;
+                        Naam = value2;
+                    }</code>
+            </p>
         </div>
         <div class="col firstRow">
             <h3 id="javaRekenmachine">Java rekenmachine</h3>
             <img src="gifs/h8Rekenmachine.gif" width="325px" height="300px" data-toggle="modal" data-target="#myModal3">
+            <p id="javaRText">
+                De eerste twee textfields zijn je invoer getallen.<br>
+                Vervolgens heb je de optie de getallen X, /, + en - te doen.
+                Om te zorgen dat de uitkomst word geprint op het scherm:<br>
+                <code class="language-java">g.drawString("" + uitkomst, 760, 50);</code>
+            </p>
         </div>
     </div>
 </div>
+
 <div class="modal fade bd-example-modal-lg" tabindex="-1" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -377,8 +384,7 @@
         </div>
     </div>
 </div>
-<div class="fixed-bg"></div>
-<div class="container">
+<div class="container" id="backgroundsecondrow">
     <div class="row">
         <div class="col secondRow">
             <h3 id="javaTelboek">Java telefoonboek</h3>

@@ -59,7 +59,6 @@ a#infolink:hover {
     font-family: 'Poppins', sans-serif;
 }
 .secondRow {
-    top: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,9 +68,49 @@ a#infolink:hover {
 }
 p#javaNPText {
     color: white;
-    position: absolute;
-    top: 350px;
+    position: relative;
     align-items: center;
     text-align: center;
+}
+html::before {
+    content: ' ';
+    display: block;
+    background-image: url('../img/backgroundPortfolio3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -10; // This is pretty important.
+}
+.container#backgroundfirstrow {
+    position: relative;
+    top: 50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 100%;
+}
+p#javaGText {
+    color: white;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+p#javaRText {
+    color: white;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.container#backgroundsecondrow {
+    position: relative;
+    top: 200px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-width: 100%;
 }
 

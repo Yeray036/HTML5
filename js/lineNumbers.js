@@ -22,3 +22,6 @@ Prism.hooks.add('after-highlight', function (env) {
     env.element.appendChild(lineNumbersWrapper);
 
 });
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
