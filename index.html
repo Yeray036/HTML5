@@ -33,9 +33,13 @@
     <title>Yeray Portfolio</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/loadscreen.css">
 </head>
-<body>
-
+<body onload="myFunction()">
+<div id="loader">
+    <img src="svg/Double%20Ring-1s-200px.svg" alt="Loader Animation">
+</div>
+<div id="content" class="animate-bottom">
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html" ><img id="logo" src="img/YGP.png" width="100" height="60" name="ygpLogo"></a>
@@ -90,6 +94,20 @@
                 </div>
             </div>
         </div>
+</div>
+<script type="text/javascript">
+    var Start;
+
+
+    function myFunction() {
+        Start = setTimeout(showpage,2500);
+    }
+
+    function showpage() {
+        document.getElementById("loader").style.display="none";
+        document.getElementById("content").style.display="block";
+    }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

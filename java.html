@@ -40,9 +40,13 @@
     <link rel="stylesheet" href="css/line-numbers.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/java_page.css" rel="stylesheet">
+    <link href="css/loadscreen.css" rel="stylesheet">
 </head>
-<body>
-
+<body onload="myFunction()">
+<div id="loader">
+    <img src="svg/Double%20Ring-1s-200px.svg" alt="Loader Animation">
+</div>
+<div id="content" class="animate-bottom">
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img id="logo" src="img/YGP.png" width="100px" height="60px"
@@ -76,6 +80,7 @@
         </div>
     </div>
 </div>
+
 <div class="container" id="backgroundfirstrow">
     <div class="row">
         <div class="col firstRow">
@@ -83,11 +88,10 @@
             <img src="gifs/H2%20GUI.gif" width="325px" height="300px" id="javaNamePrintimg" data-toggle="modal"
                  data-target="#myModal">
             <p id="javaNPText">
-            Zoals de naam het al zegt.
-            Deze java classe zorgt ervoor
-            dat je een bepaalde tekst kan uitprinten,
-            dit zou je kunnen aanpassen in:<br>
-            <code class="language-java">g.drawstring("invoer", x, y);</code>
+            Zoals de naam al zegt:
+            deze javaklasse zorgt ervoor
+            dat je een bepaalde tekst kan printen.<br>
+            <div data-toggle="modal" data-target="#myModal" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
             </p>
         </div>
         <div class="col firstRow">
@@ -95,28 +99,22 @@
             <img src="gifs/h5Grafiek.gif" width="325px" height="300px" id="javaGrafiekimg" data-toggle="modal"
                  data-target="#myModal2">
             <p id="javaGText">
-                In deze java code kan je
-                bepaalde values toevoegen/aanpassen.<br>
-                De waardes kan je aanpassen in:<br>
-                <code class="language-java">public init() {
-                        Valerie = value;
-                        Naam = value2;
-                    }</code>
+                In deze javacode kan je<br>
+                bepaalde values toevoegen/aanpassen.
+                <div data-toggle="modal" data-target="#myModal2" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
             </p>
         </div>
         <div class="col firstRow">
             <h3 id="javaRekenmachine">Java rekenmachine</h3>
             <img src="gifs/h8Rekenmachine.gif" width="325px" height="300px" data-toggle="modal" data-target="#myModal3">
             <p id="javaRText">
-                De eerste twee textfields zijn je invoer getallen.<br>
-                Vervolgens heb je de optie de getallen X, /, + en - te doen.
-                Om te zorgen dat de uitkomst word geprint op het scherm:<br>
-                <code class="language-java">g.drawString("" + uitkomst, 760, 50);</code>
+                De eerste twee textfields zijn je invoergetallen.<br>
+                Vervolgens heb je de optie de getallen X, /, + en - te doen.<br>
+            <div data-toggle="modal" data-target="#myModal3" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
             </p>
         </div>
     </div>
 </div>
-
 <div class="modal fade bd-example-modal-lg" tabindex="-1" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -390,14 +388,30 @@
             <h3 id="javaTelboek">Java telefoonboek</h3>
             <img src="gifs/h12Telefoonboek.gif" width="325px" height="300px" data-toggle="modal"
                  data-target="#myModal4">
+            <p id="javaTText">
+                Zodra alle tien de telefoonnummers & namen zijn ingevoerd<br>
+                kun je deze d.m.v. de "Enter" toets<br> printen op het scherm.<br>
+            <div data-toggle="modal" data-target="#myModal4" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
+            </p>
         </div>
         <div class="col secondRow">
             <h3 id="javaBrickWalls">Java brick walls</h3>
             <img src="gifs/h13BrickWalls.gif" width="325px" height="300px" data-toggle="modal" data-target="#myModal5">
+            <p id="javaBWText">
+                Deze javacode maakt 2 soorten muren: een rode stenen muur & een betonnen muur.
+                Het leuke aan deze code is dat ik hier 3 verschillende kleuren heb gebruikt waardoor het meer getextureerd is.
+                <div data-toggle="modal" data-target="#myModal5" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
+            </p>
         </div>
         <div class="col secondRow">
             <h3 id="javaPokerChips">Java AI token game</h3>
             <img src="gifs/h14Pokerchips.gif" width="325px" height="300px" data-toggle="modal" data-target="#myModal6">
+            <p id="javaPCText">
+                In deze javacode heb ik semi AI ontwikkeld,<br>
+                die kijkt naar jouw inzet en vanuit daar random zelf een getal pakt,
+                maar wel zo dat hij altijd probeert te winnen.
+                <div data-toggle="modal" data-target="#myModal6" id="javaGAlertLink"><b>Klik hier of op de "GIF" voor de sourcecode</b></div>
+            </p>
         </div>
     </div>
 </div>
@@ -799,12 +813,27 @@
         </div>
     </div>
 </div>
+</div>
+<script type="text/javascript">
+    var Start;
+
+
+    function myFunction() {
+        Start = setTimeout(showpage,2500);
+    }
+
+    function showpage() {
+        document.getElementById("loader").style.display="none";
+        document.getElementById("content").style.display="block";
+    }
+</script>
 <script src="js/prism.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="js/lineNumbers.js"></script>
+<script src="js/loadscreenjs.js"></script>
 </body>
 
 </html>

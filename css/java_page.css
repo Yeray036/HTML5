@@ -63,6 +63,7 @@ a#infolink:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    color: lightblue;
     text-shadow: 2px 1px 1px black;
     font-family: 'Poppins', sans-serif;
 }
@@ -75,7 +76,7 @@ p#javaNPText {
 html::before {
     content: ' ';
     display: block;
-    background-image: url('../img/backgroundPortfolio3.jpg');
+    background-image: url('../img/leathercarbonBackground.png');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -90,7 +91,6 @@ html::before {
 .container#backgroundfirstrow {
     position: relative;
     top: 50px;
-    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     min-width: 100%;
 }
@@ -109,8 +109,34 @@ p#javaRText {
 .container#backgroundsecondrow {
     position: relative;
     top: 200px;
-    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     min-width: 100%;
 }
-
+p#javaTText {
+    color: white;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+p#javaBWText {
+    color: white;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+div#javaGAlertLink {
+    cursor: pointer;
+    color: dodgerblue;
+    transition: color 0.3s;
+}
+div#javaGAlertLink:hover {
+    text-decoration: underline;
+    color: lightblue;
+    transition: color 0.3s;
+}
+p#javaPCText {
+    color: white;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
